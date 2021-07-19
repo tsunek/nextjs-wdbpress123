@@ -17,6 +17,14 @@ import styles from '@/styles/Home.module.css'
 //   return { props: { posts } }
 // }
 
+// 生成後10秒以降のアクセスは再生成試行
+// export async function getStaticProps({ params }) {
+//   const res = await fetch(`https://.../posts/${ params.id }`);
+//   const item = await res.json();
+//   // 再生成試行間隔（10秒）
+//   return { props: { item }, revalidate: 10 }
+// }
+
 export default function Home() {
   return (
     <div className={ styles.container }>
