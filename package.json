@@ -9,12 +9,14 @@
     "export": "next export"
   },
   "dependencies": {
-    "next": "10.x",
+    "@octokit/core": "^3.5.1",
+    "next": "^11.1.0",
     "react": "17.x",
     "react-dom": "17.x"
   },
   "devDependencies": {
     "@types/react": "^17.0.14",
+    "prettier": "^2.3.2",
     "typescript": "^4.3.5"
   }
 }
