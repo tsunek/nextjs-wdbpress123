@@ -26,7 +26,7 @@ export function UserRepos({ username, repos }: Props) {
             <td>{repo.owner?.type}</td>
             <td>{repo.private ? "o" : "-"}</td>
             <td>
-              <Link prefetch={false} href={`https://github.com/${username}/${repo.name}`}>
+              <Link prefetch={false} href={`/users/${username}/${repo.name}`}>
                 <a>{repo.name}</a>
               </Link>
             </td>
