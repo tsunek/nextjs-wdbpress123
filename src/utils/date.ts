@@ -3,7 +3,7 @@ function padzero(num: number, digit = 2) {
 }
 
 export function now() {
-  const japanStandardTime = new Date().toLocaleDateString(undefined, {
+  const japanStandardTime = new Date().toLocaleString(undefined, {
     timeZone: "Asia/Tokyo",
   });
   const date = new Date(japanStandardTime);
