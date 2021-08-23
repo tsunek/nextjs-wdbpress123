@@ -9,7 +9,7 @@ export function UserDescription({ user }: Props) {
   return (
     <div className={styles.module}>
       <p className={styles.avatar}>
-        <img src={user.avatar_url} width="230" />
+        <img src={user.avatar_url.toString()} width="230" />
       </p>
       <div className={styles.description}>
         <h1>{user.name}</h1>
@@ -18,7 +18,7 @@ export function UserDescription({ user }: Props) {
         {user.twitter_username && (
           <p>
             <a href={`https://twitter.com/${user.twitter_username}`}>
-              {user.twitter_username}
+              @{user.twitter_username}
             </a>
           </p>
         )}
