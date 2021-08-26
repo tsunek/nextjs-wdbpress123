@@ -13,7 +13,8 @@
     "next": "^11.1.0",
     "next-auth": "^3.28.0",
     "react": "17.x",
-    "react-dom": "17.x"
+    "react-dom": "17.x",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "@types/next-auth": "^3.15.0",
