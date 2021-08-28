@@ -13,15 +13,15 @@ export function User() {
           {session?.user?.name ? session.user.name : "Guest User"}
         </p>
         <p className={styles.avatar}>
-          {session.user && typeof session.user.image === "string" && (
+          {session?.user && typeof session.user.image === "string" && (
             <img src={session.user.image} />
           )}
         </p>
         <div className={styles.signInOut}>
           {session ? (
-            <Button onClick={() => signOut()}>Sign Out</Button>
+            <Button onClick={() => signOut()}>SIGN OUT</Button>
           ) : (
-            <Button onClick={() => signIn()}>Sign In</Button>
+            <Button onClick={() => signIn()}>SIGN IN</Button>
           )}
         </div>
       </div>

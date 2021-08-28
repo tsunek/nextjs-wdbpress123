@@ -1,5 +1,8 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import { Template } from "@/components/templates";
+import React from "react";
+
+// import Head from 'next/head'
+// import styles from '@/styles/Home.module.css'
 
 // export async function getStaticPaths() {
 //   return {
@@ -35,17 +38,19 @@ import styles from '@/styles/Home.module.css'
 // }
 
 // 旧初期データ取得方法
-function Page({ stars }) {
-  return <div>Next stars: { stars }</div>
-}
+// function Page({ stars }) {
+//   return <div>Next stars: { stars }</div>
+// }
 
-Page.getInitialProps = async (ctx) => {
-  const res = await fetch('https://api.github.com/repos/vercel/next.js');
-  const json = await res.json();
-  return { stars: json.stargazers_count }
-}
+// Page.getInitialProps = async (ctx) => {
+//   const res = await fetch('https://api.github.com/repos/vercel/next.js');
+//   const json = await res.json();
+//   return { stars: json.stargazers_count }
+// }
 
-export default Page
+export default function Page() {
+  return <Template />;
+}
 
 // export default function Home() {
 //   return (
